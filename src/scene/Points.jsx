@@ -10,7 +10,7 @@ export default function Points()
     const materialRef = useRef()
 
     const geometry = new THREE.BufferGeometry()
-    const count = 200
+    const count = 100
     const positions = new Float32Array(count * 3)
     const sizes = new Float32Array(count)
     const velocity = new Float32Array(count)
@@ -23,7 +23,7 @@ export default function Points()
         positions[i3 + 0] = (Math.random() - 0.5) * 10
         positions[i3 + 1] = (Math.random() - 0.5) * 8 - 4
         positions[i3 + 2] = (Math.random() - 0.5) * 20
-        sizes[i] = 5 + Math.random() * 20
+        sizes[i] = 5 + Math.random() * 10
         velocity[i] = 0.4 + Math.random() * 0.6
         distance[i] = 0.6 + Math.random() * 0.4
     }

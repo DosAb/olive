@@ -19,7 +19,7 @@ export default function Products()
     // const normalTexture = useTexture("./textures/mountainNormal.png")
 
     return <>
-        <Float rotationIntensity={0.4} speed={0.8} floatIntensity={0.5} floatingRange={[-0.1, 0.1]} >
+        <Float rotationIntensity={0} speed={0.8} floatIntensity={0.5} floatingRange={[-0.1, 0.1]} >
             <mesh scale={2} geometry={modelGeometry} >
                 <meshStandardMaterial roughness={0.3} map={baseColorTexture} />
             </mesh>

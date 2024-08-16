@@ -90,35 +90,41 @@ export default function Particles()
 
     {/* LEAFS */}
 
-    <mesh 
-        position={[-0.83, 0.2, -.15]} 
-        rotation-x={Math.random() * Math.PI} 
-        rotation-z={Math.random() * Math.PI} 
-        rotation-y={Math.random() * Math.PI}
-        scale={.1} 
-        geometry={oliveLeafGeometry} 
-    >
-        <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
-    </mesh>
-    <mesh 
-        position={[0.83, 0.4, -.15]} 
-        rotation-x={Math.random() * Math.PI} 
-        rotation-z={Math.random() * Math.PI} 
-        rotation-y={Math.random() * Math.PI}
-        scale={.1} 
-        geometry={oliveLeafGeometry} 
-    >
-        <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
-    </mesh>
-    <mesh 
-        position={[1.2, -0.2, -.35]} 
-        rotation-x={Math.random() * Math.PI} 
-        rotation-z={Math.random() * Math.PI} 
-        rotation-y={Math.random() * Math.PI}
-        scale={.1} 
-        geometry={oliveLeafGeometry} 
-    >
-        <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
-    </mesh>
+    <Float>
+        <mesh 
+            position={[-0.83, 0.2, -.15]} 
+            rotation-x={Math.random() * Math.PI} 
+            rotation-z={Math.random() * Math.PI} 
+            rotation-y={Math.random() * Math.PI}
+            scale={.1} 
+            geometry={oliveLeafGeometry} 
+        >
+            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
+        </mesh>
+    </Float>
+    <Float>
+        <mesh 
+            position={[0.83, 0.4, -.15]} 
+            rotation-x={Math.random() * Math.PI} 
+            rotation-z={Math.random() * Math.PI} 
+            rotation-y={Math.random() * Math.PI}
+            scale={.1} 
+            geometry={oliveLeafGeometry} 
+        >
+            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
+        </mesh>
+    </Float>
+    <Float>
+        <mesh 
+            position={[1.2, -0.2, -.35]} 
+            rotation-x={Math.random() * Math.PI} 
+            rotation-z={Math.random() * Math.PI} 
+            rotation-y={Math.random() * Math.PI}
+            scale={.1} 
+            geometry={oliveLeafGeometry} 
+        >
+            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
+        </mesh>
+    </Float>
     </>
 }

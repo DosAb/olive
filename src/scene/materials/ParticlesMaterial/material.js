@@ -12,7 +12,7 @@ const ParticlesMaterial = shaderMaterial(
     {
         colorTexture: null,
         uTime: 0,
-        uColor1: new THREE.Color('#C1DD54'),
+        uColor1: new THREE.Color('#ECF39E'),
         uColor2: new THREE.Color('#F2F4F3'),
         uTexture: texture
     },
