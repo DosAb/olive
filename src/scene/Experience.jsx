@@ -29,14 +29,14 @@ export default function Experience()
         <OrbitControls
             target={ [ 0, 0, 0 ] }
             enablePan={ false }
-            minDistance={ 0 }
+            minDistance={ 0.7 }
             maxDistance={ 100 }
         />
         <Perf position="top-left" />
         <Lights />
         <Products />
         <Particles />
-        <Points />
+        {/* <Points /> */}
     </Canvas>
     </>
 }

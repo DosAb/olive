@@ -30,6 +30,6 @@ export default function Products()
                 <meshStandardMaterial color={"#E70126"} roughness={0.5} metalness={0} />
             </mesh>
         </Float>
-        <ContactShadows position={[0, -0.4, 0]} opacity={0.25} scale={10} blur={1.5} far={0.8} />
+        <ContactShadows position={[0, -0.6, 0]} opacity={1} scale={10} blur={1.5} far={0.8} />
     </>
 }
