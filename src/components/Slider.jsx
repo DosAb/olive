@@ -41,11 +41,13 @@ export default function Slider()
                     </div>
                     <div className="testimonial">
                     <h3>Louise</h3>
-                    <p>I am a loyal supporter of President Trump and I can say that these Trump MEDBED Cards are the real deal! I ordered 10 for my whole family’s health.</p>
+                    <p>Knowing that I'm using a pure, natural product makes me feel good about what I'm serving my family. This olive oil has truly become a staple in my kitchen</p>
+                    <img src={stars} alt="stars" />
                     </div>
                     <div className="testimonial">
                     <h3>Georgia</h3>
-                    <p>I originally ordered only 1 Trump MEDBED Card, but I had to come back to order 5 more. My Friends were really happy when they healed all their diseases.</p>
+                    <p>I've tried many different olive oils over the years, but this one stands out as the best by far. The first thing you notice is the fresh, aromatic scent that hints at the quality and care put into every bottle</p>
+                    <img src={stars} alt="stars" />
                 </div>
             </div>
             </div>
