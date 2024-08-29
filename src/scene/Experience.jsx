@@ -1,14 +1,18 @@
 import { Canvas } from '@react-three/fiber'
+import gsap from 'gsap';
 import * as THREE from 'three'
 import { Perf } from 'r3f-perf'
+import { useGSAP } from "@gsap/react";
 import { OrbitControls, ScrollControls } from '@react-three/drei'
 import Products from './Products'
 import Lights from './Lights'
 import Particles from './Particles'
+import { useRef } from 'react';
+
 
 export default function Experience()
 {
-
+    
     return <>
     <Canvas
         dpr={0.8} //pixelRatio
@@ -33,7 +37,7 @@ export default function Experience()
             enableZoom={ false }
         />
         {/* <Perf position="top-left" /> */}
-        <group position={[0, 0, 0]}>
+        <group position={[0, -0.05, 0]}>
             <Lights />
             <Products />
             <Particles />

@@ -10,7 +10,7 @@ export default function HeroScene()
     <Canvas
         dpr={0.8} //pixelRatio
         gl={{ 
-            antialias: false,
+            antialias: true,
             outputColorSpace: THREE.SRGBColorSpace,
             alpha: true,
         }} // renderer
@@ -22,13 +22,6 @@ export default function HeroScene()
             far: 100
         }}
     >
-        <OrbitControls
-            target={ [ 0, 0, 0 ] }
-            enablePan={ false }
-            minDistance={ 0.7 }
-            maxDistance={ 10 }
-            enableZoom={ false }
-        />
         <Float rotationIntensity={0.5} speed={0.8} floatIntensity={0.2} floatingRange={[-0.05, 0.05]} >
             <Olive />
         </Float>

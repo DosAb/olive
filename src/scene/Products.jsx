@@ -2,12 +2,26 @@ import { useRef, useEffect, useMemo, useState } from 'react'
 import { events, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { useTexture, useGLTF, Float, ContactShadows, MeshTransmissionMaterial,  } from '@react-three/drei'
+import { Perf } from 'r3f-perf'
+import gsap from 'gsap';
+import { useGSAP } from "@gsap/react";
 import useProduct from "../stores/useProduct"
+
 
 export default function Products()
 {
+    const mm = gsap.matchMedia()
+    const groupRef = useRef()
+
+    function setMatchMedia(){
+        
+    }
+
+    useGSAP(()=>{
+        setMatchMedia()
+    })
+
     const product = useProduct((state) => state.product);
-    console.log(product)
 
     const model = useGLTF('./models/5l-tin.glb').scene
     const modelGeometry = model.children[0].geometry

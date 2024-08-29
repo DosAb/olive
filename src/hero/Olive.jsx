@@ -2,12 +2,34 @@ import { useFrame} from '@react-three/fiber'
 import * as THREE from 'three'
 import { useRef, useEffect, useMemo, useState } from 'react'
 import { useTexture, useGLTF, MeshTransmissionMaterial } from '@react-three/drei'
-
+import { Perf } from 'r3f-perf'
+import gsap from 'gsap';
+import { useGSAP } from "@gsap/react";
 import "./planeMaterial/material"
 
 export default function Olive()
 {
     const groupRef = useRef()
+    const mainRef = useRef()
+    const mm = gsap.matchMedia()
+
+    function setMatchMedia(){
+        mm.add("(min-width: 1024px) and (max-width: 2048px)", () => {
+            if(mainRef.current){
+                mainRef.current.position.x = 0.4
+            }
+        })
+        mm.add("(min-width: 768px) and (max-width: 1024px)", () => {
+            if(mainRef.current){
+                mainRef.current.position.x = 0.2
+                groupRef.current.scale.setScalar(1.1)
+            }
+        })
+    }
+
+    useGSAP(()=>{
+        setMatchMedia()
+    })
 
     const oliveModel = useGLTF('./models/olive1l.glb').scene
     const oliveGeometry = oliveModel.children[0].geometry
@@ -37,7 +59,7 @@ export default function Olive()
         groupRef.current.position.x += (mouse.x * 0.1 - groupRef.current.position.x) / 30
         groupRef.current.position.y += (mouse.y * 0.05 - groupRef.current.position.y) / 50
 
-        groupRef.current.rotation.y += (mouse.x * 0.5 - (groupRef.current.rotation.y - Math.PI / 2 )) / 40
+        groupRef.current.rotation.y += (mouse.x * 0.5 - (groupRef.current.rotation.y - Math.PI / 2 + .3 )) / 40
     })
 
     const uniforms = {
@@ -46,7 +68,7 @@ export default function Olive()
     }
 
     return <>
-    <group position={[0.4, -0.05, 0]} rotation-z={-0.25}>
+    <group ref={mainRef} position={[0.4, -0.05, 0]} rotation-z={-0.25}>
         {/* <mesh>
             <planeGeometry />
             <planeMaterial transparent={true} uniforms={uniforms} />
