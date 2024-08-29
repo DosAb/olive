@@ -40,7 +40,7 @@ export default function Particles()
     </Float>
     <Float>
         <mesh 
-            position={[-0.6, 0.2, .3]} 
+            position={[-0.6, 0.4, .0]} 
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
@@ -52,7 +52,7 @@ export default function Particles()
     </Float>
     <Float>
         <mesh 
-            position={[0.6, 0.4, .3]} 
+            position={[0.6, 0.4, .1]} 
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
@@ -104,22 +104,10 @@ export default function Particles()
     </Float>
     <Float>
         <mesh 
-            position={[0.83, 0.4, -.15]} 
-            rotation-x={Math.random() * Math.PI} 
-            rotation-z={Math.random() * Math.PI} 
-            rotation-y={Math.random() * Math.PI}
-            scale={.1} 
-            geometry={oliveLeafGeometry} 
-        >
-            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
-        </mesh>
-    </Float>
-    <Float>
-        <mesh 
-            position={[1.2, -0.2, -.35]} 
-            rotation-x={Math.random() * Math.PI} 
-            rotation-z={Math.random() * Math.PI} 
-            rotation-y={Math.random() * Math.PI}
+            position={[0.55, 0.2, -.45]} 
+            rotation-x={-0.35} 
+            rotation-z={.65} 
+            rotation-y={0.75}
             scale={.1} 
             geometry={oliveLeafGeometry} 
         >

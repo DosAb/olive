@@ -5,14 +5,13 @@ import { OrbitControls, ScrollControls } from '@react-three/drei'
 import Products from './Products'
 import Lights from './Lights'
 import Particles from './Particles'
-import Points from './Points'
 
 export default function Experience()
 {
 
     return <>
     <Canvas
-        dpr={1} //pixelRatio
+        dpr={0.8} //pixelRatio
         gl={{ 
             antialias: true,
             outputColorSpace: THREE.SRGBColorSpace,
@@ -30,13 +29,15 @@ export default function Experience()
             target={ [ 0, 0, 0 ] }
             enablePan={ false }
             minDistance={ 0.7 }
-            maxDistance={ 100 }
+            maxDistance={ 10 }
+            enableZoom={ false }
         />
-        <Perf position="top-left" />
-        <Lights />
-        <Products />
-        <Particles />
-        {/* <Points /> */}
+        {/* <Perf position="top-left" /> */}
+        <group position={[0, 0, 0]}>
+            <Lights />
+            <Products />
+            <Particles />
+        </group>
     </Canvas>
     </>
 }
