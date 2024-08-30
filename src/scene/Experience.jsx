@@ -4,9 +4,7 @@ import * as THREE from 'three'
 import { Perf } from 'r3f-perf'
 import { useGSAP } from "@gsap/react";
 import { OrbitControls, ScrollControls } from '@react-three/drei'
-import Products from './Products'
-import Lights from './Lights'
-import Particles from './Particles'
+import Scene from './Scene';
 import { useRef } from 'react';
 
 
@@ -38,9 +36,7 @@ export default function Experience()
         />
         {/* <Perf position="top-left" /> */}
         <group position={[0, -0.05, 0]}>
-            <Lights />
-            <Products />
-            <Particles />
+            <Scene />
         </group>
     </Canvas>
     </>

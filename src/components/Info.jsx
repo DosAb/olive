@@ -35,8 +35,9 @@ export default function Info()
                 </div>
                 <div className="oile-line"></div>
                 <div className="oil-description">
-                    <h2>we offer only premium olive oil</h2>
-                    <p>Unlock the secret to a healthier lifestyle with our pure, premium olive oil—nature’s golden elixir. Sourced from the finest olive groves, our olive oil is cold-pressed to preserve its rich, robust flavor and health-boosting properties.</p>
+                    <h2>Contact Us</h2>
+                    <p>Unit 8, Keltic Business Centre, Listowel, Clieveragh Industrial Estate, Co. Kerry, V31 Y727 Ireland</p>
+                    <a href="#!">Call us</a>
                 </div>
             </div>
         </div>

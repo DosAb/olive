@@ -59,6 +59,11 @@ main {
   /* z-index: 1; */
 }
 
+.product{
+  max-width: 1312px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
 .our-products {
   margin-top: 128px;
@@ -75,7 +80,6 @@ main {
   justify-content: flex-end;
   align-items: center;
   border: 3px solid #2d5605;
-  margin: 0 64px;
   border-radius: 50px;
 }
 
@@ -91,6 +95,7 @@ main {
   width: 50%;
   justify-self: flex-end;
   margin-top: -64px;
+  padding-right: 32px;
 }
 
 .products__description h5 {
@@ -155,18 +160,19 @@ button:hover {
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  width: 200px;
+  aspect-ratio: 2 / 2.5;
+}
+
+.product__img img{
+  width: 100%;
+  height: 100%;
 }
 
 .product__img:hover {
   background-color: #ffeb73;
 }
 
-@media screen and (max-width: 1024px){
-  .products__description{
-    width: 70%;
-    padding: 0 16px 0 0;
-  }
-}
 
 
 /* Hero */
@@ -174,6 +180,7 @@ button:hover {
 .hero {
   padding: 0 64px;
   height: 100dvh;
+  max-width: 1312px;
 }
 
 .backgroun-img{
@@ -297,6 +304,7 @@ button:hover {
   box-sizing: content-box;
   margin: 64px 0 228px;
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -361,10 +369,6 @@ button:hover {
   line-height: normal;
   text-transform: capitalize;
 }
-
-
-
-
 
 
 
@@ -466,6 +470,7 @@ button:hover {
   padding: 132px 64px 32px;
   background-color: #111E26;
   border-radius: 100px 100px 0 0;
+  gap: 20px;
 }
 
 .footer-logo{
@@ -514,4 +519,312 @@ button:hover {
 
 .last-column p {
   margin: 0;
+}
+
+@media screen and (max-width: 1024px){
+  .canvas{
+    transform: translateX(0);
+  }
+
+  .products__container{
+    align-items: flex-end;
+  }
+
+  .products__description{
+    width: 100%;
+    padding: 0 16px 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  .products__select {
+    gap: 20px;
+  }
+
+  .testimonial h1{
+    font-size: 80px;
+    margin-bottom: 0px;
+  }
+  .testimonial h3{
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  .testimonial p{
+    font-size: 20px;
+    line-height: 140%;
+    max-width: 600px;
+  }
+
+  .testimonial-btn button img{
+    width: 60px;
+  }
+  
+  .first-product img{
+    width: 500px;
+  }
+
+  .second-product img{
+    width: 500px;
+  }
+  .first-product{
+    padding: 0 16px;
+  }
+
+  .second-product {
+    padding: 0 16px;
+    margin-top: -32px;
+  }
+
+  .info h2{
+    font-size: 46px;
+  }
+
+  .oil-info img{
+    width: 250px;
+  }
+
+  .oil-info h4{
+    margin-left: 32px;
+  }
+  .oil-info p{
+    margin-left: 32px;
+  }
+
+  .second-section {
+    margin-left: 32px;
+  }
+
+  .oil-description p{
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer{
+    padding: 124px 32px 32px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px){
+  .products__container {
+    margin: 0 16px;
+  }
+
+  .products__select{
+    padding: 0 16px;
+    gap: 10px;
+  }
+
+  .testimonial-header{
+    font-size: 48px;
+  }
+
+  .testimonials{
+    padding: 24px 0;
+  }
+
+  .testimonials p{
+    line-height: 120%;
+    max-width: 500px;
+  }
+
+  .testimonial-btn button{
+    margin: 0 10px;
+    padding: 4px;
+  }
+
+  .testimonial-btn button img{
+    width: 50px;
+  }
+  
+  .first-product img{
+    width: 350px;
+  }
+
+  .second-product img{
+    width: 350px;
+  }
+  .first-product{
+    padding: 0 16px;
+  }
+
+  .second-product {
+    padding: 0 16px;
+    margin-top: 16px;
+  }
+
+  .info{
+    margin-top: 0;
+  }
+
+  .info h2{
+    font-size: 36px;
+  }
+
+  .info p {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .oil-info img{
+    width: 200px;
+  }
+
+  .oil-info h4{
+    margin-left: 16px;
+  }
+  .oil-info p{
+    margin-left: 16px;
+  }
+
+  .first-section{
+    margin-left: 16px;
+  }
+
+  .second-section {
+    margin-left: 16px;
+  }
+
+  .oile-line{
+    margin: 0 30px 0 20px;
+  }
+
+  .oil-description p{
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  .oil-info h4{
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .oil-info p{
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  .oil-description h2{
+    font-size: 36px;
+  }
+
+  .footer{
+    padding: 124px 32px 32px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .logo{
+    width: 300px;
+  }
+
+  .hero{
+    padding: 0 16px;
+  }
+
+  .our-products{
+    font-size: 46px;
+  }
+
+  .products__description{
+    padding: 0 16px 16px; 
+  }
+
+  .products__description p{
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .products__description button{
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+
+  .testimonial-btn button img{
+    width: 30px;
+  }
+
+  .product__img{
+    border-radius: 20px;
+  }
+
+  .products__select{
+    padding: 0;
+  }
+
+  .testimonial-header{
+    margin-top: 64px;
+    font-size: 32px;
+  }
+  
+
+  .testimonials p{
+    line-height: 130%;
+    max-width: 280px;
+    font-size: 14px;
+    margin: 16px auto;
+  }
+
+  .testimonial h1{
+    font-size: 50px;
+    margin-bottom: -10px;
+  }
+  .testimonial h3{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .testimonial-btn button{
+    margin: 0 10px;
+    padding: 4px 0px;
+  }
+
+  .first-product{
+    flex-direction: column-reverse;
+  }
+  .second-product{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .oil-info {
+    flex-direction: column;
+    margin-top: 96px;
+  }
+  .oil-info h4{
+    margin: 12px 0 0;
+  }
+
+  .oil-info p{
+    margin: 12px 0 0;
+  }
+
+  .first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .second-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 32px 0 0;
+  }
+
+  .oil-description{
+    margin-top: 32px;
+    padding: 16px;
+  }
+
+  .footer{
+    flex-direction: column;
+    gap: 32px;
+  }
+
 }

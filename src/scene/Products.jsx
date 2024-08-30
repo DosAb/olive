@@ -124,7 +124,7 @@ export default function Products()
         {product == 'liter' ? 
         <group visible={product == 'liter'} rotation-y={Math.PI / 2}>
             <mesh scale={2} geometry={model1LiterGeometry} >
-                <MeshTransmissionMaterial color="#61772C" roughness={0.2}  transmission={0.85} thickness={0.1} />
+                <MeshTransmissionMaterial color="#5F8D3A" roughness={0.2}  transmission={0.8} thickness={0.1} />
             </mesh>
             <mesh scale={2} geometry={literFrontLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={literFrontTexture} />
@@ -157,7 +157,7 @@ export default function Products()
         {product == '750ml' ? 
         <group visible={product == '750ml'} rotation-y={-Math.PI / 2}>
             <mesh scale={2} geometry={olive750mlGeometry} >
-                <MeshTransmissionMaterial color="#61772C" roughness={0.2}  transmission={0.85} thickness={0.1} />
+                <MeshTransmissionMaterial color="#5F8D3A" roughness={0.2}  transmission={0.8} thickness={0.1} />
             </mesh>
             <mesh scale={2} geometry={olive750mlLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={olive750Texture} />
@@ -173,15 +173,12 @@ export default function Products()
         <group visible={product == '5l'} rotation-y={-Math.PI / 2}>
             <mesh scale={2} geometry={mar5LiterGeometry} >
                 <MeshTransmissionMaterial 
-                    color="#A09533" 
+                    color="#FFD884" 
                     roughness={0.2} 
                     thickness={3} 
-                    chromaticAberration={0.06} 
-                    transmission={0.95}
-                    temporalDistortion={0.5} 
-                    backside={false}
+                    transmission={0.9}
                     ior={0.5} 
-                    clearcoat={1} 
+                    clearcoat={10} 
                 />
             </mesh>
             <mesh scale={2} geometry={mar5LiterLabelGeometry} >

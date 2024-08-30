@@ -53,6 +53,7 @@ export default function Products()
     },[])
 
     return <>
+    <div className="product">
         <h1 className="our-products">Our products</h1>
         <div className="products__container">
             <div className="canvas">
@@ -83,5 +84,6 @@ export default function Products()
                 <img src={img1lTin} alt="1l-tin" />
             </div>
         </div>
+    </div>
     </>
 }
