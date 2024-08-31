@@ -7,10 +7,11 @@ import secondOil from "/imgs/oilImg2.png"
 export default function Info()
 {
     return <>
-        <div className="first-product">
+        <div id="info" className="first-product">
             <div className="info">
-                <h2>we know what makes great olives</h2>
-                <p>Unlock the secret to a healthier lifestyle with the magic of olive oil. Known as "liquid gold," olive oil is more than just a cooking ingredient—it's a symbol of wellness, tradition, and flavor. Packed with powerful antioxidants and heart-healthy fats, this versatile oil elevates every dish, from crisp salads to savory pastas.</p>
+                <h2>Do you know ? </h2>
+                <p>Portugal olive oil is renowned for being the best quilty globaly 
+Portugal set to become third largest olive oil producer in the world by 2026 ! Si!</p>
             </div>
             <img src={firstImage} alt="firstImage" />
         </div>
@@ -18,15 +19,16 @@ export default function Info()
             <img src={secondimage} alt="firstImage" />
             <div className="info">
                 <h2>experts by choice, quality by tradition</h2>
-                <p>Whether you're drizzling it over fresh vegetables or using it as the base for your favorite marinades, olive oil enhances the taste of your food while nourishing your body. Choose extra virgin olive oil for its superior quality and rich, robust flavor, and experience the essence of the Mediterranean diet with every drop.</p>
+                <p>This olive oil is going to make everything taste amazing!"
+                Nostro Olive Oil. It's more than just cooking, it's a taste of good life</p>
             </div>
         </div>
         <div className="oil-section">
             <div className="oil-info">
                 <div className="first-section">
                     <img src={firstOil} alt="firstOil" />
-                    <h4>exclusive <br /> technologies</h4>
-                    <p>All-Natural Goodness: 100% pure and free from additives or preservatives, offering you the best that nature has to offer.</p>
+                    <h4>Nostro is <br />perfect for:</h4>
+                    <p>ideal for frying your favorite foods without burning or compromising flavor. Oven cooking: Drizzle or brush nostro on vegetables, meats, or fish before roasting or baking for a touch of olive flavor and moisture. Seasoning: Add a subtle richness to salads, dressings, and marinades</p>
                 </div>
                 <div className="second-section">
                     <img src={secondOil} alt="firstOil" />
@@ -36,8 +38,10 @@ export default function Info()
                 <div className="oile-line"></div>
                 <div className="oil-description">
                     <h2>Contact Us</h2>
-                    <p>Unit 8, Keltic Business Centre, Listowel, Clieveragh Industrial Estate, Co. Kerry, V31 Y727 Ireland</p>
-                    <a href="#!">Call us</a>
+                    <h3>ARD ALJANOOB TRADING LLC</h3>
+                    <p><span>Addres</span>:  Iraq Baghdad</p>
+                    <p><span>Phone</span>:  07766016661  /  07749902029</p>
+                    <p><span>Email</span>:  info@ardaljanoob.com  /  info@terla.ie</p>
                 </div>
             </div>
         </div>

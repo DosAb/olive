@@ -27,13 +27,7 @@ export default function Experience()
             far: 100
         }}
     >
-        <OrbitControls
-            target={ [ 0, 0, 0 ] }
-            enablePan={ false }
-            minDistance={ 0.7 }
-            maxDistance={ 10 }
-            enableZoom={ false }
-        />
+
         {/* <Perf position="top-left" /> */}
         <group position={[0, -0.05, 0]}>
             <Scene />

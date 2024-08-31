@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { useGSAP } from "@gsap/react";
 import { useRef, useEffect, useMemo, useState } from 'react'
+import { OrbitControls } from '@react-three/drei'
 
 import Products from './Products'
 import Lights from './Lights'
@@ -10,30 +11,36 @@ export default function Scene()
 {
     const mm = gsap.matchMedia()
     const groupRef = useRef()
+    const [enableOrbitControls, setEnableOrbitControls] = useState(true)
 
     function setMatchMedia(){
         mm.add("(min-width: 1024px) and (max-width: 2048px)", () => {
             if(groupRef.current){
                 groupRef.current.scale.setScalar(1)
             }
+            setEnableOrbitControls(true)
         })
         mm.add("(min-width: 768px) and (max-width: 1024px)", () => {
             if(groupRef.current){
                 groupRef.current.position.y = 0.25
                 groupRef.current.scale.setScalar(0.7)
             }
+            setEnableOrbitControls(true)
         })
         mm.add("(min-width: 500px) and (max-width: 768px)", () => {
             if(groupRef.current){
                 groupRef.current.position.y = 0.25
                 groupRef.current.scale.setScalar(0.7)
             }
+            setEnableOrbitControls(true)
         })
         mm.add("(max-width: 500px)", () => {
             if(groupRef.current){
-                groupRef.current.position.y = 0.25
+                groupRef.current.position.y = 0.42
+                groupRef.current.position.x = 0.03
                 groupRef.current.scale.setScalar(0.55)
             }
+            setEnableOrbitControls(false)
         })
     }
 
@@ -42,9 +49,17 @@ export default function Scene()
     })
 
     return <>
+        <OrbitControls
+            enabled={enableOrbitControls}
+            target={ [ 0, 0, 0 ] }
+            enablePan={ false }
+            minDistance={ 0.7 }
+            maxDistance={ 10 }
+            enableZoom={ false }
+        />
         <group ref={groupRef}>
             <Lights />
-            <Products />
+            <Products rotating={!enableOrbitControls} />
             <Particles />
         </group>
     </>

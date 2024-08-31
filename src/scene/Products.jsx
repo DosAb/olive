@@ -1,25 +1,13 @@
 import { useRef, useEffect, useMemo, useState } from 'react'
 import { events, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import { useTexture, useGLTF, Float, ContactShadows, MeshTransmissionMaterial,  } from '@react-three/drei'
+import { useTexture, useGLTF, Float, ContactShadows, MeshTransmissionMaterial } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
-import gsap from 'gsap';
-import { useGSAP } from "@gsap/react";
 import useProduct from "../stores/useProduct"
 
-
-export default function Products()
+export default function Products({rotating})
 {
-    const mm = gsap.matchMedia()
     const groupRef = useRef()
-
-    function setMatchMedia(){
-        
-    }
-
-    useGSAP(()=>{
-        setMatchMedia()
-    })
 
     const product = useProduct((state) => state.product);
 
@@ -102,8 +90,15 @@ export default function Products()
     olive1lTinTexture.colorSpace = THREE.SRGBColorSpace
     olive1lTinTexture.flipY = false
 
+    useFrame((state, delta)=>{
+        if(rotating){
+            groupRef.current.rotation.y += delta
+        }
+    })
+
 
     return <>
+    <group ref={groupRef}>
         <Float rotationIntensity={0} speed={0.8} floatIntensity={0.5} floatingRange={[-0.1, 0.1]} >
 
         {/* 5l-tin */}
@@ -191,6 +186,7 @@ export default function Products()
         : ''}
 
         </Float>
+    </group>
         {/* <ContactShadows position={[0, -0.5, 0]} opacity={0.8} scale={10} blur={1.5} far={0.8} /> */}
     </>
 }

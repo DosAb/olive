@@ -30,23 +30,23 @@ export default function Slider()
     }
     return (
     <div>
-        <h1 className='testimonial-header'>Features</h1>
+        <h1 className='testimonial-header'>Benefits</h1>
         <div className="testimonials">
             <div className="slider-wrapper">
             <div ref={testimonailRef} className="slider">
                 <div className="testimonial">
-                    <h3>Rich in Antioxidants</h3>
-                    <p>Olive oil is packed with powerful antioxidants, which help protect the body from free radical damage and support overall health. These natural compounds contribute to its anti-inflammatory properties and are linked to numerous health benefits, including heart health and reduced risk of chronic diseases.</p>
+                    <h3>Affordable</h3>
+                    <p>Enjoy the benefits of olive oil at a budget-friendly price. Experience the taste of Portugal in every drop.</p>
                     {/* <img src={stars} alt="stars" /> */}
                     </div>
                     <div className="testimonial">
-                    <h3>Versatile Culinary Use</h3>
-                    <p>Olive oil’s versatile flavor profile makes it perfect for a wide range of culinary applications. Whether used in salad dressings, sautéing vegetables, marinating meats, or as a finishing touch on dishes, it enhances the taste of food with its smooth, fruity, and sometimes slightly peppery notes.</p>
+                    <h3>Heart-Healthy</h3>
+                    <p>Packed with monounsaturated fats, promoting a healthy heart.</p>
                     {/* <img src={stars} alt="stars" /> */}
                     </div>
                     <div className="testimonial">
-                    <h3>Cold-Pressed for Maximum Quality</h3>
-                    <p>High-quality olive oils are typically cold-pressed, meaning they are extracted without the use of heat or chemicals. This process preserves the natural flavor and nutritional value of the olives, ensuring a pure, unadulterated product that delivers both taste and health benefits.</p>
+                    <h3>Versatility in Cooking and Beauty</h3>
+                    <p>Olive oil is highly versatile, suitable for various culinary uses such as sautéing, baking, and salad dressings.</p>
                     {/* <img src={stars} alt="stars" /> */}
                 </div>
             </div>

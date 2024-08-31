@@ -34,8 +34,13 @@ export default function Hero()
             <img className="logo" src={logo} alt="logo" />
             {/* <img className="backgroun-img" src={background} alt="background" /> */}
             <div className="background"></div>
-            <p>From gourmet chefs to home cooks, our olive oil is the go-to choice for those who value quality and flavor. Experience the difference in every drop—transform your meals, delight your taste buds, and nourish your body with our exceptional olive oil.</p>
-            <button>Learn more</button>
+            <p>Nostro Olive Oil. It's more than just cooking, it's a taste of good life, Si!
+Nostro Pomace Olive Oil. Crafted from the finest olive pomace,
+balance of flavor and nutrition authentic flavors of Portuguese cuisine to your table. 
+Each bottle is a testament to the rich culinary traditions of Portugal,
+Rich, earthy taste.</p>
+            
+            <a href="#products"><button>Discover</button></a>
             <img src={foreGround} alt="foreGround" className="foreground" />
             <img src={heroBlur} alt="heroBlur" className="hero-blur"></img>
             {/* <div className="gradient-overlay"></div> */}
