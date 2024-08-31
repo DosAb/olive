@@ -119,7 +119,7 @@ export default function Products({rotating})
         {product == 'liter' ? 
         <group visible={product == 'liter'} rotation-y={Math.PI / 2}>
             <mesh scale={2} geometry={model1LiterGeometry} >
-                <MeshTransmissionMaterial color="#5F8D3A" roughness={0.2}  transmission={0.8} thickness={0.1} />
+                <MeshTransmissionMaterial color="#92D15F" roughness={0.2}  transmission={0.8} thickness={0.1} />
             </mesh>
             <mesh scale={2} geometry={literFrontLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={literFrontTexture} />
@@ -152,7 +152,7 @@ export default function Products({rotating})
         {product == '750ml' ? 
         <group visible={product == '750ml'} rotation-y={-Math.PI / 2}>
             <mesh scale={2} geometry={olive750mlGeometry} >
-                <MeshTransmissionMaterial color="#5F8D3A" roughness={0.2}  transmission={0.8} thickness={0.1} />
+                <MeshTransmissionMaterial color="#92D15F" roughness={0.2}  transmission={0.8} thickness={0.1} />
             </mesh>
             <mesh scale={2} geometry={olive750mlLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={olive750Texture} />

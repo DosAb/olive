@@ -220,7 +220,8 @@ button:hover {
 }
 
 .logo {
-  margin-top: 250px;
+  margin-top: 200px;
+  width: 320px;
 }
 
 .hero p {

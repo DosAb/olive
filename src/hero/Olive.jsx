@@ -87,7 +87,7 @@ export default function Olive()
         </mesh> */}
         <group ref={groupRef} scale={1.2} rotation-y={0}>
             <mesh onPointerEnter={()=>{console.log('enter')}} geometry={oliveGeometry} >
-                <MeshTransmissionMaterial color="#5F8D3A" roughness={0.2}  transmission={0.8} thickness={0.1} />
+                <MeshTransmissionMaterial color="#87C355" roughness={0.2}  transmission={0.8} thickness={0.1} />
             </mesh>
             <mesh geometry={literFrontLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={literFrontTexture} />

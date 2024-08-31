@@ -18,9 +18,8 @@ Portugal set to become third largest olive oil producer in the world by 2026 ! S
         <div className="second-product">
             <img src={secondimage} alt="firstImage" />
             <div className="info">
-                <h2>experts by choice, quality by tradition</h2>
-                <p>This olive oil is going to make everything taste amazing!"
-                Nostro Olive Oil. It's more than just cooking, it's a taste of good life</p>
+                <h2>This olive oil is going to make everything taste amazing!"</h2>
+                <p>Nostro Olive Oil. It's more than just cooking, it's a taste of good life</p>
             </div>
         </div>
         <div className="oil-section">
