@@ -1,6 +1,8 @@
 import leftArrow from "/imgs/arrowRight.svg"
 import rightArrow from "/imgs/arrowLeft.svg"
 import stars from "/imgs/stars.svg"
+import brownLeaf from "/imgs/brownLeaf.png"
+import greenLeaf from "/imgs/greenLeaf.png"
 
 import { useRef } from 'react'
 
@@ -29,7 +31,7 @@ export default function Slider()
       testimonailRef.current.style.transform = 'translateX(' + (countSlider) * (-sliderWidth) + 'px)'
     }
     return (
-    <div>
+    <div className="benefits">
         <h1 className='testimonial-header'>Benefits</h1>
         <div className="testimonials">
             <div className="slider-wrapper">
@@ -56,6 +58,8 @@ export default function Slider()
             <button onClick={testimonialBtnClick}><img src={rightArrow} alt="rigthArrow" /></button>
             </div>
         </div>
+        <img className="leaf__img" src={brownLeaf} alt="brownLeaf" />
+        <img className="leaf__img-right" src={greenLeaf} alt="greenLeaf" />
     </div>
     )
 }

@@ -57,8 +57,9 @@ main {
 }
 
 .product{
-  max-width: 1312px;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 64px;
   overflow: hidden;
 }
 
@@ -220,8 +221,8 @@ button:hover {
 }
 
 .logo {
-  margin-top: 200px;
-  width: 320px;
+  margin-top: 300px;
+  /* width: 320px; */
 }
 
 .hero p {
@@ -274,6 +275,24 @@ button:hover {
 }
 
 /* Testimonial */
+
+.benefits{
+  position: relative;
+}
+
+.leaf__img{
+  position: absolute;
+  bottom: -64px;
+  left: 100px;
+  pointer-events: none;
+}
+
+.leaf__img-right{
+  position: absolute;
+  bottom: -100px;
+  right: 100px;
+  pointer-events: none;
+}
 
 .testimonial-header {
   font-size: 64px;
@@ -368,7 +387,77 @@ button:hover {
   text-transform: capitalize;
 }
 
+.features{
+  background-image: url("/imgs/featuresBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 124px 0 230px;
+  color: #fff;
+}
 
+.features-description{
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.features-section{
+  margin-top: 94px;
+}
+
+.features h4{
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #D3B600;
+}
+
+.features p{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.feature-number{
+  display: inline-block;
+  width: 44px !important;
+  height: 32px !important;
+  background: #D3B600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #393939;
+  font-size: 16px;
+}
+
+.features-row{
+  display: flex;
+}
+
+.features h4{
+  display: inline-block;
+}
+
+.features h1{
+  text-align: center;
+  font-size: 81px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.features-container{
+  display: flex;
+  gap: 52px;
+  flex-direction: column;
+  max-width: 460px;
+}
+
+.features-section{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
 
 .first-product{
   margin-top: -124px;  
@@ -473,6 +562,26 @@ button:hover {
 .oil-description span{
   font-weight: 700;
   color: #938423;
+}
+
+.last-section{
+  margin-top: 124px;
+  height: 460px;
+  background-image: url("/imgs/lastSectionBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.last-section h1{
+  font-size: 64px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 120%;
 }
 
 .footer{
