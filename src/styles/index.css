@@ -135,10 +135,11 @@ p {
   border-radius: 20px;
   background-color: #2d5605;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 button:hover {
-  background-color: #557cff;
+  background-color: #4f9f00;
 }
 
 .product__title {
@@ -253,6 +254,11 @@ button:hover {
   border-radius: 20px;
   cursor: pointer;
   z-index: 99;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero button:hover{
+  background: #ffdd00;
 }
 
 .foreground {
@@ -405,6 +411,7 @@ button:hover {
   background-position: center;
   padding: 124px 0 230px;
   color: #fff;
+  margin-top: 64px;
 }
 
 .features-description{

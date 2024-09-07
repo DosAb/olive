@@ -10,8 +10,8 @@ export default function Application()
     return <>
         <Hero />
         <Products />
-        <Slider />
         <Features />
+        <Slider />
         <Info />
         <Footer />
     </>

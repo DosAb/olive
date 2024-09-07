@@ -241,6 +241,10 @@ export default function Products({rotating})
 
         </Float>
     </group>
-        {/* <ContactShadows position={[0, -0.5, 0]} opacity={0.8} scale={10} blur={1.5} far={0.8} /> */}
+    {/* <mesh position={[0, 0, -1]}>
+        <planeGeometry args={[2.5, 2.5]} />
+        <meshBasicMaterial transparent={true} opacity={0.5} />
+    </mesh> */}
+    <ContactShadows position={[0, -0.5, 0]} opacity={0.8} scale={10} blur={1} far={0.8} />
     </>
 }

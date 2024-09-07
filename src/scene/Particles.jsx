@@ -20,10 +20,10 @@ export default function Particles()
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
-            scale={2} 
+            scale={2.5} 
             geometry={oliveGeometry} 
         >
-            <meshStandardMaterial roughness={0.3} color={"#90A955"} />
+            <meshStandardMaterial roughness={0.2} color={"#90A955"} />
         </mesh>
     </Float>
     <Float>
@@ -32,10 +32,10 @@ export default function Particles()
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
-            scale={2} 
+            scale={2.5} 
             geometry={oliveGeometry} 
         >
-            <meshStandardMaterial roughness={0.3} color={"#90A955"} />
+            <meshStandardMaterial roughness={0.2} color={"#90A955"} />
         </mesh>
     </Float>
     <Float>
@@ -44,10 +44,10 @@ export default function Particles()
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
-            scale={2} 
+            scale={2.5} 
             geometry={oliveGeometry} 
         >
-            <meshStandardMaterial roughness={0.3} color={"#D1C060"} />
+            <meshStandardMaterial roughness={0.2} color={"#D1C060"} />
         </mesh>
     </Float>
     <Float>
@@ -56,10 +56,10 @@ export default function Particles()
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
-            scale={2} 
+            scale={3} 
             geometry={oliveGeometry} 
         >
-            <meshStandardMaterial roughness={0.3} color={"#495440"} />
+            <meshStandardMaterial roughness={0.2} color={"#495440"} />
         </mesh>
     </Float>
     <Float>
@@ -69,10 +69,10 @@ export default function Particles()
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
-            scale={2} 
+            scale={3} 
             geometry={oliveGeometry} 
         >
-            <meshStandardMaterial roughness={0.3} color={"#495440"} />
+            <meshStandardMaterial roughness={0.2} color={"#495440"} />
         </mesh>
     </Float>
     <Float>
@@ -81,10 +81,10 @@ export default function Particles()
             rotation-x={Math.random() * Math.PI} 
             rotation-z={Math.random() * Math.PI} 
             rotation-y={Math.random() * Math.PI} 
-            scale={2} 
+            scale={2.5} 
             geometry={oliveGeometry} 
         >
-            <meshStandardMaterial roughness={0.3} color={"#495440"} />
+            <meshStandardMaterial roughness={0.2} color={"#495440"} />
         </mesh>
     </Float>
 
@@ -99,7 +99,7 @@ export default function Particles()
             scale={.1} 
             geometry={oliveLeafGeometry} 
         >
-            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
+            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.1} map={oliveLeafTexture} />
         </mesh>
     </Float>
     <Float>
@@ -111,7 +111,7 @@ export default function Particles()
             scale={.1} 
             geometry={oliveLeafGeometry} 
         >
-            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={oliveLeafTexture} />
+            <meshStandardMaterial side={THREE.DoubleSide} roughness={0.1} map={oliveLeafTexture} />
         </mesh>
     </Float>
     </>
