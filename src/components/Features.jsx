@@ -29,21 +29,21 @@ export default function Features()
                 </div>
                 <div className="features-container">
                 <div className="features-description">
-                        <div className="feature-number">1</div>
+                        <div className="feature-number">4</div>
                         <div className="features-column">
                             <h4>Reduces Cholesterol Levels</h4>
                             <p>The health benefits of olive oil include lower cholesterol levels in the your blood.</p>
                         </div>
                     </div>
                     <div className="features-description">
-                        <div className="feature-number">1</div>
+                        <div className="feature-number">5</div>
                         <div className="features-column">
                             <h4>Helps Digestion</h4>
                             <p>Although high in calories, olive oil has shown to help reduce levels of obesity.</p>
                         </div>
                     </div>
                     <div className="features-description">
-                        <div className="feature-number">1</div>
+                        <div className="feature-number">6</div>
                         <div className="features-column">
                             <h4>Prevents Blood Clotting</h4>
                             <p>Olive oil can reduce the risk of heart attacks and stroke, also improve blood clotting.</p>

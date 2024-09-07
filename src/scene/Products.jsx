@@ -96,6 +96,28 @@ export default function Products({rotating})
         }
     })
 
+    const config ={
+        meshPhysicalMaterial: false,
+        transmissionSampler: false,
+        backside: false,
+        samples: { value: 10, min: 1, max: 32, step: 1 },
+        resolution: { value: 2048, min: 256, max: 2048, step: 256 },
+        transmission: { value: 1, min: 0, max: 1 },
+        roughness: { value: 0.0, min: 0, max: 1, step: 0.01 },
+        thickness: { value: 3.5, min: 0, max: 10, step: 0.01 },
+        ior: { value: 1.5, min: 1, max: 5, step: 0.01 },
+        chromaticAberration: { value: 0.06, min: 0, max: 1 },
+        anisotropy: { value: 0.1, min: 0, max: 1, step: 0.01 },
+        distortion: { value: 0.0, min: 0, max: 1, step: 0.01 },
+        distortionScale: { value: 0.3, min: 0.01, max: 1, step: 0.01 },
+        temporalDistortion: { value: 0.5, min: 0, max: 1, step: 0.01 },
+        clearcoat: { value: 1, min: 0, max: 1 },
+        attenuationDistance: { value: 0.5, min: 0, max: 10, step: 0.01 },
+        attenuationColor: '#ffffff',
+        color: '#c9ffa1',
+        bg: '#839681'
+      }
+
 
     return <>
     <group ref={groupRef}>
@@ -119,7 +141,23 @@ export default function Products({rotating})
         {product == 'liter' ? 
         <group visible={product == 'liter'} rotation-y={Math.PI / 2}>
             <mesh scale={2} geometry={model1LiterGeometry} >
-                <MeshTransmissionMaterial color="#92D15F" roughness={0.2}  transmission={0.8} thickness={0.1} />
+                <MeshTransmissionMaterial 
+                    meshPhysicalMaterial={false}
+                    transmissionSampler={false}
+                    backside={false}
+                    samples={10}
+                    resolution={512}
+                    // ior={1.5}
+                    anisotropy={0.1}
+                    color="#c9ffa1"
+                    bg="#839681"
+                    attenuationDistance={0.5}
+                    attenuationColor="#ffffff"
+                    clearcoat={1}
+                    roughness={0.0}  
+                    transmission={0.95} 
+                    thickness={3.5} 
+                />
             </mesh>
             <mesh scale={2} geometry={literFrontLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={literFrontTexture} />
@@ -152,7 +190,23 @@ export default function Products({rotating})
         {product == '750ml' ? 
         <group visible={product == '750ml'} rotation-y={-Math.PI / 2}>
             <mesh scale={2} geometry={olive750mlGeometry} >
-                <MeshTransmissionMaterial color="#92D15F" roughness={0.2}  transmission={0.8} thickness={0.1} />
+            <MeshTransmissionMaterial 
+                    meshPhysicalMaterial={false}
+                    transmissionSampler={false}
+                    backside={false}
+                    samples={10}
+                    resolution={512}
+                    // ior={1.5}
+                    anisotropy={0.1}
+                    color="#c9ffa1"
+                    bg="#839681"
+                    attenuationDistance={0.5}
+                    attenuationColor="#ffffff"
+                    clearcoat={1}
+                    roughness={0.0}  
+                    transmission={0.95} 
+                    thickness={3.5} 
+                />
             </mesh>
             <mesh scale={2} geometry={olive750mlLabelGeometry} >
                 <meshStandardMaterial side={THREE.DoubleSide} roughness={0.3} map={olive750Texture} />
@@ -169,11 +223,11 @@ export default function Products({rotating})
             <mesh scale={2} geometry={mar5LiterGeometry} >
                 <MeshTransmissionMaterial 
                     color="#FFD884" 
-                    roughness={0.2} 
+                    roughness={0.1} 
                     thickness={3} 
-                    transmission={0.9}
+                    transmission={0.95}
                     ior={0.5} 
-                    clearcoat={10} 
+                    clearcoat={1} 
                 />
             </mesh>
             <mesh scale={2} geometry={mar5LiterLabelGeometry} >

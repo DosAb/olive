@@ -7,7 +7,7 @@ import secondOil from "/imgs/oilImg2.png"
 export default function Info()
 {
     return <>
-        {/* <div id="info" className="first-product">
+        <div id="info" className="first-product">
             <div className="info">
                 <h2>Do you know ? </h2>
                 <p>Portugal olive oil is renowned for being the best quilty globaly 
@@ -21,7 +21,7 @@ Portugal set to become third largest olive oil producer in the world by 2026 ! S
                 <h2>This olive oil is going to make everything taste amazing!"</h2>
                 <p>Nostro Olive Oil. It's more than just cooking, it's a taste of good life</p>
             </div>
-        </div> */}
+        </div>
         <div className="oil-section">
             <div className="oil-info">
                 <div className="first-section">

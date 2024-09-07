@@ -32,6 +32,7 @@ export default function Hero()
     return <>
         <div className="hero">
             <img className="logo" src={logo} alt="logo" />
+            <h1 className="hero-title">Olive oil</h1>
             {/* <img className="backgroun-img" src={background} alt="background" /> */}
             <div className="background"></div>
             <p>Nostro Olive Oil. It's more than just cooking, it's a taste of good life, Si!
@@ -41,12 +42,9 @@ Each bottle is a testament to the rich culinary traditions of Portugal,
 Rich, earthy taste.</p>
             
             <a href="#products"><button>Discover</button></a>
-            <img src={foreGround} alt="foreGround" className="foreground" />
-            <img src={heroBlur} alt="heroBlur" className="hero-blur"></img>
-            {/* <div className="gradient-overlay"></div> */}
-            <div className="heroCanvas">
+            {/* <div className="heroCanvas">
                 {showCanvas && <HeroScene />}
-            </div>
+            </div> */}
         </div>
     </>
 }
