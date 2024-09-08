@@ -92,7 +92,7 @@ export default function Products({rotating})
 
     useFrame((state, delta)=>{
         if(rotating){
-            groupRef.current.rotation.y += delta
+            groupRef.current.rotation.y += delta * 0.5
         }
     })
 
@@ -245,6 +245,6 @@ export default function Products({rotating})
         <planeGeometry args={[2.5, 2.5]} />
         <meshBasicMaterial transparent={true} opacity={0.5} />
     </mesh> */}
-    <ContactShadows position={[0, -0.5, 0]} opacity={0.8} scale={10} blur={1} far={0.8} />
+    {/* <ContactShadows position={[0, -0.5, 0]} opacity={0.8} scale={10} blur={1} far={0.8} /> */}
     </>
 }

@@ -36,9 +36,9 @@ export default function Scene()
         })
         mm.add("(max-width: 500px)", () => {
             if(groupRef.current){
-                groupRef.current.position.y = 0.42
-                groupRef.current.position.x = 0.03
-                groupRef.current.scale.setScalar(0.55)
+                groupRef.current.position.y = 0.4
+                groupRef.current.position.x = 0.
+                groupRef.current.scale.setScalar(0.5)
             }
             setEnableOrbitControls(false)
         })

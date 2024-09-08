@@ -930,6 +930,31 @@ button:hover {
 }
 
 @media screen and (max-width: 500px){
+  .logo{
+    width: 90px;
+  }
+
+  .hero{
+    padding: 0 16px;
+  }
+
+  .hero h1{
+    font-size: 90px;
+  }
+
+  .hero p{
+    font-size: 16px;
+  }
+
+  .background{
+    background-position: right;
+  }
+
+  .hero button{
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
   .product{
     padding: 0;
   }
@@ -967,7 +992,7 @@ button:hover {
   }
 
   .logo{
-    width: 300px;
+    width: 200px;
   }
 
   .hero{
