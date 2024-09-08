@@ -36,7 +36,7 @@ export default function Scene()
         })
         mm.add("(max-width: 500px)", () => {
             if(groupRef.current){
-                groupRef.current.position.y = 0.4
+                groupRef.current.position.y = 0.35
                 groupRef.current.position.x = 0.
                 groupRef.current.scale.setScalar(0.5)
             }
